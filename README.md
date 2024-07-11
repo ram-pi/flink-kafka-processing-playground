@@ -21,9 +21,7 @@ taskmanager.sh start
 ```
 
 ```bash
-#wget https://dlcdn.apache.org/flink/flink-1.19.0/flink-1.19.0-bin-scala_2.12.tgz
 wget https://dlcdn.apache.org/flink/flink-1.19.1/flink-1.19.1-bin-scala_2.12.tgz
-#tar xf flink-1.19.0-bin-scala_2.12.tgz
 tar -xvf flink-1.19.1-bin-scala_2.12.tgz
 cd flink-1.19.1
 # Start Flink locally
@@ -43,7 +41,7 @@ kafka-topics --bootstrap-server localhost:9091 --create --topic output-3 --parti
 kafka-topics --bootstrap-server localhost:9091 --list
 ```
 
-### Generate data (with JR)
+### Generate data (with [JR](https://github.com/ugol/jr))
 
 Install jr on your machine and run the following command to generate data.
 
